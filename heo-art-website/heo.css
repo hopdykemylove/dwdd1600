@@ -1,0 +1,114 @@
+body {
+    color:#023846;
+    font-family: 'Hanuman', serif;
+    font-size: 16px;
+    font-weight : 300;
+    margin: 1rem;
+}
+/* Header Stuff Here */
+header {
+    background-color: #e5f4dd;
+    padding: 2rem 3vw;
+}
+header h1 {
+    margin: 0;
+    color:#412669
+}
+header p {
+    margin: 0;
+    color:#2a114f;
+    letter-spacing: .5px
+}
+
+/* nav stuff goes here */
+nav {
+    background-color: #d5def1;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 3vw;
+    margin: 0;
+    display: flex; 
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #2a114f;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+}
+nav li.active a {
+    background-color:#2a114f;
+    color: #d5def1;
+}
+nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* stuff for the main */
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #44A889;
+}
+main h2 {
+    color: #2a114f;
+    margin-bottom: .2rem;
+}
+main p {
+    color: #04323e;
+    margin: 0 0 .3rem 0;
+}
+
+main ol { 
+    padding: .5rem 3vw;
+    background-color:rgb(230, 247, 230)
+}
+
+main dl dt {
+    color:  #44A889;
+    font-weight: 700;
+}
+main dl dd {
+    color: #e5f4dd;
+    font-size: .9rem;
+}
+
+main ul {
+    list-style-type: circle
+}
+main ul li {
+     line-height: 125%;
+     margin-bottom: .5rem;
+     font-size: .85rem;
+}
+
+main address {
+    font-style: normal;
+    background-color:#d5def1;
+    padding: .5rem;
+    width: 12.5rem;
+    border:1px solid #04323e;
+    border-radius: .5rem;
+}
+
+main a {
+    color: #31b98e
+}
+main a:hover{
+    color:rgba(255, 68, 39, 0.784)
+}
+
+/* Footer Stuff Here */
+footer {
+    background-color: aliceblue;
+text-align: center;
+color: #2a114f;
+padding: 1rem 0;
+font-size: .85rem;
+}
+footer a{
+    color: #04323e;
+}
