@@ -2,7 +2,7 @@ body {
     color:#023846;
     font-family: 'Hanuman', serif;
     font-size: 16px;
-    font-weight : 300;
+    font-weight: 300;
     margin: 1rem;
 }
 /* Header Stuff Here */
@@ -72,7 +72,7 @@ main dl dt {
     font-weight: 700;
 }
 main dl dd {
-    color: #e5f4dd;
+    color:  #2a114f;
     font-size: .9rem;
 }
 
@@ -103,7 +103,7 @@ main a:hover{
 
 /* Footer Stuff Here */
 footer {
-    background-color: aliceblue;
+    background-color: Alice blue;
 text-align: center;
 color: #2a114f;
 padding: 1rem 0;
