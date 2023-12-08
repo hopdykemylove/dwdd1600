@@ -35,9 +35,65 @@
 <!-- Start of the page header-->
 <main>
 <h1>Exhibit</h1>
+<p>
+    Times and Dates
+    :Nothing yet
+</p>
+<h2>Request a Commission</h2>
+<form method="get" class="myForm" action="thanks.html">
 
+    <fieldset>
+        <legend>Customer Information</legend>
+<label>First Name* <input type="text" name="fname" required></label>
+<label>Last Name* <input type="text" name="lname" required></label>
+<label>Cell Number* <input type="tel" name="phone" required placeholder="984-495-4994"></label>
+<label>Email Address* <input type="email" name="email" required></label>
+</fieldset>
 
+<fieldset>
+    <legend>Commission Delivery Method</legend>
+<label><input type="radio" name="method" value="cycle">Motor Cycle(1-3 days)
+</label><br>
+<label><input type="radio" name="method" value="shipping">Mailed(3-6 days)
+</label><br>
+<label><input type="radio" name="method" value="pickup">Customer Pickup (Held till you come for it)
+</label><br>
+</fieldset>
+
+<fieldset>
+    <legend>Delivery Options</legend>
+   <label><input type="checkbox" name="porch" value="chosen"> Front Porch
+   </label><br>
+   <label><input type="checkbox" name="deck" value="chosen"> Back Deck
+   </label><br>
+   <label><input type="checkbox" name="work" value="chosen"> Work Building 
+   </label><br>
+   <label><input type="checkbox" name="garage" value="chosen"> Inside The Garage
+   </label><br>
+   <label><input type="checkbox" name="public" value="chosen"> Public Meet Up
+   </label><br>
+
+   <label>Preferred Delivery Time
+   <legend>Preffered Delivery Time</legend>
+   
+   <select name="time">
+    <option value="none">Please Select</option>
+    <option value="morning">Between Friday and Saturday</option>
+    <option value="noon">Between Friday and Saturday</option>
+    <option value="afternoon">Between Friday and Saturday</option>
+    <option value="night">Between Monday and Saturday</option>
+   </select>
+</label>
+</fieldset>
+
+<label>Comments/ Notes For Delivery 
+<textarea name="comments">Please add info about what you wish to commission and what delivery info is needed</textarea>
+</label>
+
+    <input type="submit" value="Send Commision Request">
+</form>
 </main>
+  <!--start the page footer-->      
 <footer>
   <p>&copy; 2023 &bull; Hannah Opdyke &bull; All Rights Reserved </p>
 </footer>
