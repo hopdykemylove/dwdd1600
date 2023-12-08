@@ -128,10 +128,49 @@ div.gallery figcaption {
     Color:#2a114f;
 }
 
+.myForm fieldset {
+    border: 1.5px solid #2a114f;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.myForm legend {
+    color: #2a114f;
+    font-size: .8rem;
+}
+.myForm label {
+    margin: .5rem;
+}
 
+.myForm label, myForm select, .myForm [type=text],  .myForm [type=tel], .myForm textarea {
+    display: block;
+}
+.myForm [type=text], .myform [type=tel], .myform select, .myform textarea
+{
+border: solid 1px, rgb(230, 247, 230) ;
+padding: .3rem;
+width: 210px;
+border-radius: .3rem; 
+font-family: 'Montserrat Alternates', sans-serif;
+font-weight: 175;
+}
+.myForm textarea{
+    height: 6rem;
+}
+.myForm :required{
+    background-color: #d5def1;
+}
+
+.myForm [type=submit]{
+    background-color: #44A889;
+    border: none;
+    padding: 3rem 3rem;
+    border-radius: 10px;
+    color: #d5def1;
+    margin:1rem 0 0 2vw;
+}
 /* Footer Stuff Here */
 footer {
-    background-color: Alice blue;
+    background-color:rgb(138, 138, 188);
 text-align: center;
 color: #2a114f;
 padding: 1rem 0;
