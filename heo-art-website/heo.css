@@ -243,6 +243,29 @@ font-weight: 175;
     color: #d5def1;
     margin:1rem 0 0 2vw;
 }
+
+table.artwork-commission {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.artwork-commission th {
+    background-color: #67c6a8;
+    color: white;
+    padding: .6rem 2vw;
+    text-align: left;
+}
+    table.artwork-commission td {
+        color: #0f1b51;
+        padding:.6rem 2vw;
+    }
+table.artwork-commission tr:nth-child(odd){
+    background-color: #d5def1;
+
+}
+    table.artwork-commission tr:hover{
+        background-color: rgba(136, 230, 205, 0.2);
+    }
 /* Footer Stuff Here */
 footer {
     background-color:rgb(138, 138, 188);
