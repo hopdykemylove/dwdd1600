@@ -1,3 +1,8 @@
+/* prevent problems with different browsers*/
+* {box-sizing: border-box;}
+
+
+
 body {
     color:#023846;
     font-family: 'Hanuman', serif;
@@ -9,6 +14,11 @@ body {
 header {
     background-color: #e5f4dd;
     padding: 2rem 3vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 2vw;
 }
 header h1 {
     margin: 0;
@@ -20,7 +30,40 @@ header p {
     letter-spacing: .5px
 }
 
-/* nav stuff goes here */
+/* Small Screens */
+@media only screen and (max-width: 800px) {
+ nav ul {
+    margin: 0;
+    padding: 0 2vw;
+    list-style-type: none;
+ }
+ nav a {
+    display: block;
+    padding:.8rem;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom:solid 1px #d5def1;
+    color: #44A889;
+ }
+nav .active a {
+    background-color:#44A889;
+    background-image: linear-gradient(top bottom,#44A889,#27483e );
+    color: rgb(230, 247, 230)
+}
+
+} /*end of the media query*/
+
+
+
+/*Big Screens*/
+@media only screen and (min-width: 801px) {
+
+
+
+
+
 nav {
     background-color: #d5def1;
 }
@@ -45,6 +88,9 @@ nav li.active a {
 nav a:hover {
     color: rgb(255, 255, 255);
 }
+
+}/*end of the media query*/
+
 
 /* stuff for the main */
 main {
@@ -97,8 +143,18 @@ main address {
 main a {
     color: #31b98e
 }
+
 main a:hover{
     color:rgba(255, 68, 39, 0.784)
+}
+
+.meekhero {
+    width: 100%;
+    margin: 0;
+}
+.meekhero img {
+    width: 100%;
+    height: auto;
 }
 figure.wrapped {
     width: 30%;
@@ -127,6 +183,21 @@ div.gallery figcaption {
     font-size:.8rem;
     Color:#2a114f;
 }
+div.gallery span {
+    display:block;
+    text-align: center;
+    font-weight: 700;
+    color:#b6a2d5
+}
+div.gallery img{
+    width: 98%;
+    height: auto;
+}
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px #04323e;
+}
+
 
 .myForm fieldset {
     border: 1.5px solid #2a114f;
@@ -144,7 +215,7 @@ div.gallery figcaption {
 .myForm label, myForm select, .myForm [type=text],  .myForm [type=tel], .myForm textarea {
     display: block;
 }
-.myForm [type=text], .myform [type=tel], .myform select, .myform textarea
+.myform [type=text], .myform [type=tel], .myform select, .myform textarea
 {
 border: solid 1px, rgb(230, 247, 230) ;
 padding: .3rem;
@@ -153,14 +224,18 @@ border-radius: .3rem;
 font-family: 'Montserrat Alternates', sans-serif;
 font-weight: 175;
 }
-.myForm textarea{
+
+.myform textarea{
     height: 6rem;
-}
-.myForm :required{
-    background-color: #d5def1;
+
 }
 
-.myForm [type=submit]{
+.myform :required{
+    background-color: #d5def1;
+
+}
+
+.myform [type=submit]{
     background-color: #44A889;
     border: none;
     padding: 3rem 3rem;
@@ -178,4 +253,9 @@ font-size: .85rem;
 }
 footer a{
     color: #04323e;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
 }
